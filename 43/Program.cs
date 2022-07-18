@@ -9,10 +9,11 @@ Console.WriteLine("Введите значение b2 ");
 int b2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите значение k1 ");
 int k2 = Convert.ToInt32(Console.ReadLine());
+
 double x, y;
 void getCoordinates(double b1, double k1, double b2, double k2) {
-    x = (b1 - b2) / (k2 - k1);
-    y = x * k1 + b1;
+    double x = (b1 - b2) / (k2 - k1);
+    double y = x * k1 + b1;
 
-    Console.WriteLine("Точка пересечения {0}"+ (b1 - b2) / (k2 - k1) + "; {0}" + x * k1 + b1);
+Console.WriteLine("Точка пересечения {0}"+ x + "; {0}" + y);
 }
